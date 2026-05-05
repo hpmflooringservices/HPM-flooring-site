@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HPM Flooring LLC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f7f7f7;
+      color: #111;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    header {
+      background: #ffffff;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid #ececec;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 0;
+    }
+
+    .logo {
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: #ff6a00;
+    }
+
+    .logo span {
+      color: #111;
+      font-weight: 700;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      margin-left: 24px;
+      font-weight: 500;
+      transition: 0.2s ease;
+    }
+
+    nav a:hover {
+      color: #ff6a00;
+    }
+
+    .hero {
+      padding: 90px 0 70px;
+      background: #fff;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      line-height: 1.1;
+      margin-bottom: 20px;
+      font-weight: 800;
+    }
+
+    .accent {
+      color: #ff6a00;
+    }
+
+    .hero p {
+      color: #555;
+      font-size: 1.05rem;
+      margin-bottom: 30px;
+      max-width: 550px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 14px 24px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.2s ease;
+      display: inline-block;
+    }
+
+    .btn-primary {
+      background: #ff6a00;
+      color: #fff;
+    }
+
+    .btn-primary:hover {
+      background: #e85f00;
+    }
+
+    .btn-secondary {
+      border: 1px solid #ddd;
+      color: #111;
+      background: #fff;
+    }
+
+    .hero-image img {
+      width: 100%;
+      border-radius: 24px;
+      object-fit: cover;
+      min-height: 420px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+
+    .badges {
+      display: flex;
+      gap: 18px;
+      margin-top: 35px;
+      flex-wrap: wrap;
+    }
+
+    .badge {
+      background: #f3f3f3;
+      padding: 12px 16px;
+      border-radius: 12px;
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+
+    section {
+      padding: 80px 0;
+    }
+
+    .section-title {
+      font-size: 2.2rem;
+      margin-bottom: 12px;
+      font-weight: 800;
+      text-align: center;
+    }
+
+    .section-subtitle {
+      text-align: center;
+      color: #666;
+      margin-bottom: 50px;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 22px;
+    }
+
+    .service-card {
+      background: #fff;
+      padding: 28px;
+      border-radius: 20px;
+      border: 1px solid #eee;
+      transition: 0.2s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+    }
+
+    .service-card h3 {
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+
+    .service-card p {
+      color: #666;
+      font-size: 0.95rem;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      border-radius: 18px;
+      height: 260px;
+      object-fit: cover;
+    }
+
+    .quote-section {
+      background: #111;
+      color: #fff;
+      border-radius: 28px;
+      padding: 50px;
+    }
+
+    .quote-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: start;
+    }
+
+    .quote-section p {
+      color: #cfcfcf;
+    }
+
+    form {
+      display: grid;
+      gap: 14px;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 15px;
+      border-radius: 12px;
+      border: none;
+      font-family: inherit;
+      font-size: 1rem;
+    }
+
+    textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    footer {
+      padding: 35px 0;
+      text-align: center;
+      background: #fff;
+      border-top: 1px solid #ececec;
+      color: #666;
+      margin-top: 60px;
+    }
+
+    @media (max-width: 900px) {
+      .hero-grid,
+      .quote-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h1 {
+        font-size: 2.7rem;
+      }
+
+      nav {
+        display: none;
+      }
+
+      .hero {
+        padding-top: 60px;
+      }
+
+      .quote-section {
+        padding: 30px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+
+      .section-title {
+        font-size: 1.8rem;
+      }
+
+      .btn {
+        width: 100%;
+        text-align: center;
+      }
+
+      .gallery-grid img {
+        height: 220px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <div class="logo" style="display:flex; align-items:center; gap:12px;">
+      <img src="https://i.imgur.com/8mQZ7Zy.png" alt="HPM Flooring Logo" style="height:58px; width:auto;">
+    </div>
+
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#quote">Get Quote</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-grid">
+
+    <div>
+      <h1>Crafted Floors,<br><span class="accent">Elevated Living</span></h1>
+
+      <p>
+        HPM Flooring LLC provides clean, high-quality flooring installation with over 20 years of experience serving homeowners across the valley.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="tel:4809381053" class="btn btn-primary">Call Now</a>
+        <a href="#quote" class="btn btn-secondary">Free Estimate</a>
+      </div>
+
+      <div class="badges">
+        <div class="badge">Licensed, Bonded & Insured</div>
+        <div class="badge">ROC #363946</div>
+        <div class="badge">Serving The Valley</div>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <div style="position:absolute; background:rgba(255,255,255,0.92); padding:14px 18px; border-radius:18px; top:25px; left:25px; box-shadow:0 10px 25px rgba(0,0,0,0.08);">
+        <img src="https://i.imgur.com/8mQZ7Zy.png" alt="HPM Logo" style="height:70px; width:auto; display:block;">
+      </div>
+      <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop" alt="Modern flooring installation">
+    </div>
+
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+    <h2 class="section-title">Our Services</h2>
+    <p class="section-subtitle">Professional flooring installation done with precision and care.</p>
+
+    <div class="services-grid">
+
+      <div class="service-card">
+        <h3>Hardwood Flooring</h3>
+        <p>Durable, clean, and timeless hardwood installation for any home.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Tile Showers & Floors</h3>
+        <p>Custom tile work built to last with modern finishes and detail.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Luxury Vinyl Plank</h3>
+        <p>Waterproof LVP flooring perfect for style, comfort, and durability.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Carpet Installation</h3>
+        <p>Soft, professional carpet installation with a clean finished look.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Stair Systems</h3>
+        <p>Custom stair installations that elevate the entire space.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Baseboards & Trim</h3>
+        <p>Sharp finishing touches that complete every flooring project.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="container">
+    <h2 class="section-title">Recent Work</h2>
+    <p class="section-subtitle">Replace these images with your real installs for the best results.</p>
+
+    <div class="gallery-grid">
+      <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=1200&auto=format&fit=crop" alt="Hardwood flooring">
+      <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop" alt="Luxury flooring">
+      <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1200&auto=format&fit=crop" alt="Tile flooring">
+      <img src="https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=1200&auto=format&fit=crop" alt="Carpet installation">
+    </div>
+  </div>
+</section>
+
+<section id="quote">
+  <div class="container quote-section">
+
+    <div class="quote-grid">
+
+      <div>
+        <h2 class="section-title" style="text-align:left; color:#fff;">Get a Free Estimate</h2>
+        <p>
+          Tell us about your project and we’ll get back to you as soon as possible.
+        </p>
+      </div>
+
+      <form action="https://formspree.io/f/mbdwonpy" method="POST">
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="tel" name="phone" placeholder="Phone Number" required>
+        <input type="email" name="email" placeholder="Email Address">
+
+        <select name="flooring_type">
+          <option value="">Select Flooring Type</option>
+          <option>Hardwood</option>
+          <option>Tile</option>
+          <option>LVP</option>
+          <option>Carpet</option>
+          <option>Stairs</option>
+        </select>
+
+        <textarea name="message" placeholder="Tell us about your project"></textarea>
+
+        <button type="submit" class="btn btn-primary">Request Estimate</button>
+      </form>
+
+    </div>
+
+  </div>
+</section>
+
+<footer id="contact">
+  <div style="margin-bottom:20px;">
+    <img src="https://i.imgur.com/8mQZ7Zy.png" alt="HPM Flooring Logo" style="height:80px; width:auto;">
+  </div>
+  <div class="container">
+    <p><strong>HPM Flooring LLC</strong></p>
+    <p>(480) 938-1053 • hpmflooring.services@gmail.com</p>
+    <p>Licensed, Bonded & Insured • ROC #363946</p>
+  </div>
+</footer>
+
+</body>
+</html>

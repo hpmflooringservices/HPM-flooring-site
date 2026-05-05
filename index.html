@@ -298,152 +298,139 @@
 </head>
 <body>
 
-<header>
-  <div class="container nav">
-    <div class="logo" style="display:flex; align-items:center; gap:12px;">
-      <img src="https://i.imgur.com/8mQZ7Zy.png" alt="HPM Flooring Logo" style="height:58px; width:auto;">
+<header style="background:#fff; border-bottom:1px solid #e5e5e5; position:sticky; top:0; z-index:1000;">
+  <div class="container nav" style="padding:16px 0;">
+    <div style="display:flex; align-items:center; gap:14px;">
+      <img src="https://i.imgur.com/8mQZ7Zy.png" alt="HPM Logo" style="height:62px;">
     </div>
 
     <nav>
+      <a href="#">Home</a>
       <a href="#services">Services</a>
       <a href="#gallery">Gallery</a>
-      <a href="#quote">Get Quote</a>
+      <a href="#about">About Us</a>
       <a href="#contact">Contact</a>
     </nav>
+
+    <a href="tel:4809381053" class="btn btn-primary">📞 (480) 938-1053</a>
   </div>
 </header>
 
-<section class="hero">
-  <div class="container hero-grid">
+<section style="position:relative; min-height:720px; display:flex; align-items:center; overflow:hidden;">
 
-    <div>
-      <h1>Crafted Floors,<br><span class="accent">Elevated Living</span></h1>
+  <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1600&auto=format&fit=crop" 
+       style="position:absolute; width:100%; height:100%; object-fit:cover; top:0; left:0;">
 
-      <p>
-        HPM Flooring LLC provides clean, high-quality flooring installation with over 20 years of experience serving homeowners across the valley.
+  <div style="position:absolute; inset:0; background:linear-gradient(to right, rgba(0,0,0,0.78), rgba(0,0,0,0.25));"></div>
+
+  <div class="container" style="position:relative; z-index:2; display:grid; grid-template-columns:1.2fr 420px; gap:40px; align-items:center;">
+
+    <div style="color:#fff; max-width:700px;">
+      <h1 style="font-size:4.5rem; line-height:1; font-weight:800; margin-bottom:20px; color:#fff;">
+        PROFESSIONAL FLOORING <br>
+        <span style="color:#ff6a00;">YOU CAN TRUST</span>
+      </h1>
+
+      <p style="font-size:1.15rem; color:#f1f1f1; max-width:620px; margin-bottom:30px;">
+        Over 20+ years of experience delivering high-quality flooring installation with precision, integrity, and care.
       </p>
 
-      <div class="hero-buttons">
-        <a href="tel:4809381053" class="btn btn-primary">Call Now</a>
-        <a href="#quote" class="btn btn-secondary">Free Estimate</a>
+      <div style="display:flex; gap:16px; flex-wrap:wrap; margin-bottom:35px;">
+        <a href="tel:4809381053" class="btn btn-primary">📞 CALL (480) 938-1053</a>
+        <a href="#quote" class="btn btn-secondary" style="background:transparent; color:#fff; border:1px solid rgba(255,255,255,0.45);">GET A FREE QUOTE</a>
       </div>
 
-      <div class="badges">
-        <div class="badge">Licensed, Bonded & Insured</div>
-        <div class="badge">ROC #363946</div>
-        <div class="badge">Serving The Valley</div>
+      <div style="display:flex; gap:35px; flex-wrap:wrap; color:#fff; font-weight:600;">
+        <div>✔ LICENSED, BONDED & INSURED</div>
+        <div>✔ OVER 20+ YEARS OF EXPERIENCE</div>
+        <div>✔ 100% CUSTOMER SATISFACTION</div>
       </div>
     </div>
 
-    <div class="hero-image">
-      <div style="position:absolute; background:rgba(255,255,255,0.92); padding:14px 18px; border-radius:18px; top:25px; left:25px; box-shadow:0 10px 25px rgba(0,0,0,0.08);">
-        <img src="https://i.imgur.com/8mQZ7Zy.png" alt="HPM Logo" style="height:70px; width:auto; display:block;">
-      </div>
-      <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop" alt="Modern flooring installation">
-    </div>
+    <div id="quote" style="background:#fff; border-radius:20px; padding:32px; box-shadow:0 20px 50px rgba(0,0,0,0.18);">
+      <h2 style="font-size:2rem; margin-bottom:10px;">Get a Free Quote</h2>
+      <p style="color:#666; margin-bottom:20px;">Fill out the form below and we'll get back to you as soon as possible.</p>
 
-  </div>
-</section>
-
-<section id="services">
-  <div class="container">
-    <h2 class="section-title">Our Services</h2>
-    <p class="section-subtitle">Professional flooring installation done with precision and care.</p>
-
-    <div class="services-grid">
-
-      <div class="service-card">
-        <h3>Hardwood Flooring</h3>
-        <p>Durable, clean, and timeless hardwood installation for any home.</p>
-      </div>
-
-      <div class="service-card">
-        <h3>Tile Showers & Floors</h3>
-        <p>Custom tile work built to last with modern finishes and detail.</p>
-      </div>
-
-      <div class="service-card">
-        <h3>Luxury Vinyl Plank</h3>
-        <p>Waterproof LVP flooring perfect for style, comfort, and durability.</p>
-      </div>
-
-      <div class="service-card">
-        <h3>Carpet Installation</h3>
-        <p>Soft, professional carpet installation with a clean finished look.</p>
-      </div>
-
-      <div class="service-card">
-        <h3>Stair Systems</h3>
-        <p>Custom stair installations that elevate the entire space.</p>
-      </div>
-
-      <div class="service-card">
-        <h3>Baseboards & Trim</h3>
-        <p>Sharp finishing touches that complete every flooring project.</p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<section id="gallery">
-  <div class="container">
-    <h2 class="section-title">Recent Work</h2>
-    <p class="section-subtitle">Replace these images with your real installs for the best results.</p>
-
-    <div class="gallery-grid">
-      <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=1200&auto=format&fit=crop" alt="Hardwood flooring">
-      <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop" alt="Luxury flooring">
-      <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1200&auto=format&fit=crop" alt="Tile flooring">
-      <img src="https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=1200&auto=format&fit=crop" alt="Carpet installation">
-    </div>
-  </div>
-</section>
-
-<section id="quote">
-  <div class="container quote-section">
-
-    <div class="quote-grid">
-
-      <div>
-        <h2 class="section-title" style="text-align:left; color:#fff;">Get a Free Estimate</h2>
-        <p>
-          Tell us about your project and we’ll get back to you as soon as possible.
-        </p>
-      </div>
-
-      <form action="https://formspree.io/f/mbdwonpy" method="POST">
-        <input type="text" name="name" placeholder="Full Name" required>
+      <form action="https://formspree.io/f/mbdwonpy" method="POST" style="display:grid; gap:14px;">
+        <input type="text" name="name" placeholder="Your Name" required>
         <input type="tel" name="phone" placeholder="Phone Number" required>
         <input type="email" name="email" placeholder="Email Address">
 
         <select name="flooring_type">
-          <option value="">Select Flooring Type</option>
-          <option>Hardwood</option>
-          <option>Tile</option>
-          <option>LVP</option>
-          <option>Carpet</option>
-          <option>Stairs</option>
+          <option>Type of Flooring You're Interested In</option>
+          <option>Hardwood Flooring</option>
+          <option>Tile Showers & Floors</option>
+          <option>Luxury Vinyl Plank</option>
+          <option>Carpet Installation</option>
+          <option>Stair Systems</option>
         </select>
 
         <textarea name="message" placeholder="Tell us about your project"></textarea>
 
-        <button type="submit" class="btn btn-primary">Request Estimate</button>
+        <button type="submit" class="btn btn-primary" style="width:100%;">SEND MESSAGE</button>
       </form>
-
     </div>
 
   </div>
 </section>
 
-<footer id="contact">
-  <div style="margin-bottom:20px;">
-    <img src="https://i.imgur.com/8mQZ7Zy.png" alt="HPM Flooring Logo" style="height:80px; width:auto;">
-  </div>
+<section id="services" style="padding:80px 0; background:#f8f8f8;">
   <div class="container">
-    <p><strong>HPM Flooring LLC</strong></p>
-    <p>(480) 938-1053 • hpmflooring.services@gmail.com</p>
-    <p>Licensed, Bonded & Insured • ROC #363946</p>
+    <div style="text-align:center; margin-bottom:50px;">
+      <p style="color:#ff6a00; font-weight:700; letter-spacing:1px;">OUR SERVICES</p>
+      <h2 style="font-size:2.5rem; font-weight:800;">Quality Flooring Solutions For Every Space</h2>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card"><h3>Hardwood Flooring</h3><p>Beautiful, durable hardwood installed with precision.</p></div>
+      <div class="service-card"><h3>Tile Showers & Floors</h3><p>Custom tile showers and floors built to last.</p></div>
+      <div class="service-card"><h3>Luxury Vinyl Plank</h3><p>Waterproof, stylish, and built for real life.</p></div>
+      <div class="service-card"><h3>Carpet Installation</h3><p>Soft, comfortable, and professionally installed.</p></div>
+      <div class="service-card"><h3>Stair Systems</h3><p>Custom stair treads and systems that elevate your space.</p></div>
+      <div class="service-card"><h3>Baseboards & Trim</h3><p>Clean, crisp finishes that complete the look.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="about" style="padding:80px 0; background:#fff;">
+  <div class="container" style="display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:center;">
+    <div>
+      <p style="color:#ff6a00; font-weight:700;">ABOUT US</p>
+      <h2 style="font-size:2.5rem; margin-bottom:20px;">Local. Experienced. Reliable.</h2>
+      <p style="color:#555; font-size:1.05rem;">
+        HPM Flooring LLC is a locally owned and operated flooring company with over 20 years of experience. We take pride in our craftsmanship, attention to detail, and commitment to customer satisfaction.
+      </p>
+    </div>
+
+    <div style="background:#111; color:#fff; padding:40px; border-radius:24px;">
+      <h3 style="font-size:2rem; margin-bottom:20px;">Why Choose Us?</h3>
+      <div style="display:grid; gap:14px; font-size:1.05rem;">
+        <div>✔ Over 20+ Years of Experience</div>
+        <div>✔ Licensed, Bonded & Insured</div>
+        <div>✔ High-Quality Materials</div>
+        <div>✔ Reliable & On-Time</div>
+        <div>✔ 100% Customer Satisfaction</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="contact" style="background:#111; color:#fff; padding:40px 0;">
+  <div class="container" style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:20px; align-items:center;">
+    <div>
+      <img src="https://i.imgur.com/8mQZ7Zy.png" alt="HPM Logo" style="height:70px; margin-bottom:10px;">
+      <p>Crafted Floors, Elevated Living</p>
+    </div>
+
+    <div>
+      <p>📞 (480) 938-1053</p>
+      <p>📧 hpmflooring.services@gmail.com</p>
+    </div>
+
+    <div>
+      <p>Licensed, Bonded & Insured</p>
+      <p>ROC #363946</p>
+    </div>
   </div>
 </footer>
 

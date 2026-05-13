@@ -7,23 +7,27 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
 <style>
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
 }
+
 body{
 font-family:'Inter',sans-serif;
 background:#f5f5f5;
 color:#111;
 overflow-x:hidden;
 }
+
 .container{
 width:92%;
 max-width:1400px;
 margin:auto;
 }
+
 header{
 background:#fff;
 padding:18px 0;
@@ -32,26 +36,31 @@ top:0;
 z-index:1000;
 border-bottom:1px solid #e6e6e6;
 }
+
 .nav{
 display:flex;
 justify-content:space-between;
 align-items:center;
 gap:20px;
 }
+
 .logo img{
 height:72px;
 }
+
 nav{
 display:flex;
 gap:34px;
 align-items:center;
 }
+
 nav a{
 text-decoration:none;
 font-weight:700;
 font-size:.95rem;
 color:#111;
 }
+
 .call-btn{
 background:#ff6a00;
 color:#fff;
@@ -60,6 +69,7 @@ border-radius:10px;
 text-decoration:none;
 font-weight:700;
 }
+
 .hero{
 position:relative;
 min-height:760px;
@@ -67,11 +77,13 @@ background:url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=8
 display:flex;
 align-items:center;
 }
+
 .overlay{
 position:absolute;
 inset:0;
 background:linear-gradient(to right, rgba(0,0,0,.82), rgba(0,0,0,.35));
 }
+
 .hero-content{
 position:relative;
 z-index:2;
@@ -81,30 +93,36 @@ gap:40px;
 align-items:center;
 width:100%;
 }
+
 .hero-left{
 color:#fff;
 }
+
 .hero-left h1{
 font-size:5rem;
 line-height:.95;
 font-weight:800;
 margin-bottom:24px;
 }
+
 .orange{
 color:#ff6a00;
 }
+
 .hero-left p{
 font-size:1.15rem;
 line-height:1.8;
 max-width:580px;
 margin-bottom:32px;
 }
+
 .hero-buttons{
 display:flex;
 gap:18px;
 flex-wrap:wrap;
 margin-bottom:34px;
 }
+
 .btn{
 padding:16px 24px;
 border-radius:10px;
@@ -112,14 +130,17 @@ text-decoration:none;
 font-weight:700;
 display:inline-block;
 }
+
 .btn-orange{
 background:#ff6a00;
 color:#fff;
 }
+
 .btn-outline{
 border:1px solid rgba(255,255,255,.5);
 color:#fff;
 }
+
 .features{
 display:flex;
 gap:34px;
@@ -127,27 +148,32 @@ flex-wrap:wrap;
 font-weight:600;
 font-size:.95rem;
 }
+
 .quote-box{
 background:#fff;
 padding:34px;
 border-radius:20px;
 box-shadow:0 20px 50px rgba(0,0,0,.2);
 }
+
 .quote-box h2{
 font-size:2rem;
 margin-bottom:10px;
 text-align:center;
 }
+
 .quote-box p{
 text-align:center;
 color:#666;
 margin-bottom:20px;
 line-height:1.7;
 }
+
 form{
 display:grid;
 gap:14px;
 }
+
 input,
 textarea,
 select{
@@ -158,100 +184,121 @@ font-size:1rem;
 font-family:inherit;
 width:100%;
 }
+
 textarea{
 min-height:120px;
 resize:vertical;
 }
+
 button{
 border:none;
 cursor:pointer;
 }
+
 .services{
 padding:80px 0;
 background:#f7f7f7;
 }
+
 .section-title{
 text-align:center;
 margin-bottom:50px;
 }
+
 .section-title p{
 color:#ff6a00;
 font-weight:700;
 margin-bottom:8px;
 }
+
 .section-title h2{
 font-size:2.7rem;
 font-weight:800;
 }
+
 .services-grid{
 display:grid;
 grid-template-columns:repeat(6,1fr);
 gap:18px;
 }
+
 .card{
 background:#fff;
 border-radius:18px;
 overflow:hidden;
 box-shadow:0 5px 20px rgba(0,0,0,.05);
 }
+
 .card img{
 width:100%;
 height:120px;
 object-fit:cover;
 }
+
 .card-content{
 padding:18px;
 }
+
 .card-content h3{
 font-size:1rem;
 margin-bottom:8px;
 }
+
 .card-content p{
 font-size:.9rem;
 line-height:1.7;
 color:#666;
 }
+
 .about{
 padding:80px 0;
 background:#fff;
 }
+
 .about-grid{
 display:grid;
 grid-template-columns:1fr 1fr;
 gap:40px;
 align-items:center;
 }
+
 .about-box{
 background:#111;
 color:#fff;
 padding:42px;
 border-radius:20px;
 }
+
 .about-box h3{
 font-size:2rem;
 margin-bottom:22px;
 }
+
 .about-list{
 display:grid;
 gap:14px;
 }
+
 .recent-work{
 display:grid;
 grid-template-columns:repeat(5,1fr);
 gap:10px;
 margin-top:20px;
 }
+
 .recent-work img{
 width:100%;
 height:90px;
 object-fit:cover;
 border-radius:10px;
 }
+
 footer{
 background:#111;
 color:#fff;
 padding:40px 0;
 }
+
 .footer-grid{
 display:flex;
 justify-content:space-between;
@@ -259,10 +306,12 @@ flex-wrap:wrap;
 gap:30px;
 align-items:center;
 }
+
 .footer-logo img{
 height:72px;
 margin-bottom:10px;
 }
+
 .lead-popup{
 position:fixed;
 right:30px;
@@ -274,16 +323,19 @@ padding:24px;
 box-shadow:0 20px 60px rgba(0,0,0,.18);
 z-index:9999;
 }
+
 .lead-popup h3{
 font-size:1.5rem;
 margin-bottom:10px;
 }
+
 .popup-options{
 display:grid;
 grid-template-columns:1fr 1fr;
 gap:10px;
 margin:18px 0;
 }
+
 .popup-option{
 padding:14px;
 border:1px solid #ddd;
@@ -292,49 +344,61 @@ text-align:center;
 font-weight:600;
 font-size:.9rem;
 }
+
 @media(max-width:1200px){
 .services-grid{
 grid-template-columns:repeat(3,1fr);
 }
 }
+
 @media(max-width:1050px){
 .hero-content{
 grid-template-columns:1fr;
 padding:60px 0;
 }
+
 .hero-left h1{
 font-size:3.5rem;
 }
+
 .about-grid{
 grid-template-columns:1fr;
 }
 }
+
 @media(max-width:768px){
 nav{
 display:none;
 }
+
 .hero{
 min-height:auto;
 padding:50px 0;
 }
+
 .hero-left h1{
 font-size:2.5rem;
 }
+
 .hero-buttons{
 flex-direction:column;
 }
+
 .btn,
 .call-btn{
 width:100%;
 text-align:center;
 }
+
 .features{
 flex-direction:column;
 gap:14px;
 }
+
 .services-grid{
 grid-template-columns:1fr 1fr;
 }
+
 .lead-popup{
 width:92%;
 left:4%;
@@ -342,25 +406,31 @@ right:auto;
 bottom:20px;
 }
 }
+
 @media(max-width:560px){
 .services-grid{
 grid-template-columns:1fr;
 }
+
 .hero-left h1{
 font-size:2rem;
 }
+
 .quote-box{
 padding:24px;
 }
 }
 </style>
 </head>
+
 <body>
+
 <header>
 <div class="container nav">
 <div class="logo">
 <img src="https://i.imgur.com/8mQZ7Zy.png" alt="HPM Flooring Logo">
 </div>
+
 <nav>
 <a href="#">HOME</a>
 <a href="#services">SERVICES</a>
@@ -368,37 +438,47 @@ padding:24px;
 <a href="#about">ABOUT US</a>
 <a href="#contact">CONTACT</a>
 </nav>
+
 <a class="call-btn" href="tel:4809381053">📞 (480) 938-1053</a>
 </div>
 </header>
+
 <section class="hero">
 <div class="overlay"></div>
+
 <div class="container hero-content">
+
 <div class="hero-left">
 <h1>
 PROFESSIONAL FLOORING <br>
 <span class="orange">YOU CAN TRUST</span>
 </h1>
+
 <p>
 Over 20+ years of experience delivering high-quality flooring installation with precision, integrity, and care.
 </p>
+
 <div class="hero-buttons">
 <a href="tel:4809381053" class="btn btn-orange">📞 CALL (480) 938-1053</a>
 <a href="#contact" class="btn btn-outline">GET A FREE QUOTE</a>
 </div>
+
 <div class="features">
 <div>✔ LICENSED, BONDED & INSURED</div>
 <div>✔ OVER 20+ YEARS EXPERIENCE</div>
 <div>✔ 100% CUSTOMER SATISFACTION</div>
 </div>
 </div>
+
 <div class="quote-box" id="contact">
 <h2>GET A FREE QUOTE</h2>
 <p>Fill out the form below and we’ll get back to you as soon as possible.</p>
+
 <form action="https://formspree.io/f/mbdwonpy" method="POST">
 <input type="text" name="name" placeholder="Your Name" required>
 <input type="tel" name="phone" placeholder="Phone Number" required>
 <input type="email" name="email" placeholder="Email Address">
+
 <select name="service">
 <option>Type of Flooring You're Interested In</option>
 <option>Hardwood Flooring</option>
@@ -407,19 +487,26 @@ Over 20+ years of experience delivering high-quality flooring installation with 
 <option>Carpet Installation</option>
 <option>Stair Systems</option>
 </select>
+
 <textarea name="message" placeholder="Tell us about your project"></textarea>
+
 <button type="submit" class="btn btn-orange">SEND MESSAGE</button>
 </form>
 </div>
+
 </div>
 </section>
+
 <section class="services" id="services">
 <div class="container">
+
 <div class="section-title">
 <p>OUR SERVICES</p>
 <h2>QUALITY FLOORING SOLUTIONS FOR EVERY SPACE</h2>
 </div>
+
 <div class="services-grid">
+
 <div class="card">
 <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=1200&auto=format&fit=crop">
 <div class="card-content">
@@ -427,6 +514,7 @@ Over 20+ years of experience delivering high-quality flooring installation with 
 <p>Beautiful, durable hardwood installed with precision.</p>
 </div>
 </div>
+
 <div class="card">
 <img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?q=80&w=1200&auto=format&fit=crop">
 <div class="card-content">
@@ -434,6 +522,7 @@ Over 20+ years of experience delivering high-quality flooring installation with 
 <p>Custom tile showers and floors built to last.</p>
 </div>
 </div>
+
 <div class="card">
 <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop">
 <div class="card-content">
@@ -441,6 +530,7 @@ Over 20+ years of experience delivering high-quality flooring installation with 
 <p>Waterproof, stylish, and built for real life.</p>
 </div>
 </div>
+
 <div class="card">
 <img src="https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=1200&auto=format&fit=crop">
 <div class="card-content">
@@ -448,6 +538,7 @@ Over 20+ years of experience delivering high-quality flooring installation with 
 <p>Soft, comfortable, and professionally installed.</p>
 </div>
 </div>
+
 <div class="card">
 <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1200&auto=format&fit=crop">
 <div class="card-content">
@@ -455,6 +546,7 @@ Over 20+ years of experience delivering high-quality flooring installation with 
 <p>Custom stair systems that elevate your space.</p>
 </div>
 </div>
+
 <div class="card">
 <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1200&auto=format&fit=crop">
 <div class="card-content">
@@ -462,17 +554,22 @@ Over 20+ years of experience delivering high-quality flooring installation with 
 <p>Clean finishes that complete the look.</p>
 </div>
 </div>
+
 </div>
 </div>
 </section>
+
 <section class="about" id="about">
 <div class="container about-grid">
+
 <div>
 <p style="color:#ff6a00;font-weight:700;margin-bottom:10px;">ABOUT US</p>
 <h2 style="font-size:2.5rem;margin-bottom:20px;">LOCAL. EXPERIENCED. RELIABLE.</h2>
+
 <p style="color:#666;line-height:1.9;">
 HPM Flooring LLC is a locally owned and operated flooring company with over 20 years of experience. We take pride in our craftsmanship, attention to detail, and commitment to customer satisfaction.
 </p>
+
 <div class="recent-work">
 <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=800&auto=format&fit=crop">
 <img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?q=80&w=800&auto=format&fit=crop">
@@ -481,8 +578,10 @@ HPM Flooring LLC is a locally owned and operated flooring company with over 20 y
 <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=800&auto=format&fit=crop">
 </div>
 </div>
+
 <div class="about-box">
 <h3>WHY CHOOSE US?</h3>
+
 <div class="about-list">
 <div>✔ Over 20+ Years of Experience</div>
 <div>✔ Licensed, Bonded & Insured</div>
@@ -491,27 +590,35 @@ HPM Flooring LLC is a locally owned and operated flooring company with over 20 y
 <div>✔ 100% Customer Satisfaction</div>
 </div>
 </div>
+
 </div>
 </section>
+
 <footer>
 <div class="container footer-grid">
+
 <div class="footer-logo">
 <img src="https://i.imgur.com/8mQZ7Zy.png">
 <p>Crafted Floors, Elevated Living</p>
 </div>
+
 <div>
 <p>📞 (480) 938-1053</p>
 <p>📧 hpmflooring.services@gmail.com</p>
 </div>
+
 <div>
 <p>Licensed, Bonded & Insured</p>
 <p>ROC #363946</p>
 </div>
+
 </div>
 </footer>
+
 <div class="lead-popup">
 <h3>TELL US ABOUT YOUR PROJECT</h3>
 <p style="color:#666; line-height:1.7;">Help us understand your needs so we can provide the best solution.</p>
+
 <div class="popup-options">
 <div class="popup-option">Hardwood</div>
 <div class="popup-option">Tile</div>
@@ -520,7 +627,9 @@ HPM Flooring LLC is a locally owned and operated flooring company with over 20 y
 <div class="popup-option">Stairs</div>
 <div class="popup-option">Baseboards</div>
 </div>
+
 <a href="#contact" class="btn btn-orange" style="width:100%; text-align:center;">CONTINUE</a>
 </div>
+
 </body>
 </html>
